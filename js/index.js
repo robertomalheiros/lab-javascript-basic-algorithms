@@ -46,13 +46,12 @@ if (comp == -1) {
 //BÔNUS 1
 
 const texto = `Nulla ullamcorper ligula et nibh tempus consectetur. Donec mattis tortor sed augue cursus, in varius massa gravida. Vivamus at eros elit. Praesent facilisis a ligula tincidunt finibus. Nulla nec imperdiet dui. Mauris tristique arcu fringilla massa ultrices dapibus. Nunc gravida felis eget dui luctus, consequat faucibus dolor efficitur.`
-
-
-
 const palavras = texto.split(' ').filter(palavra => palavra.length >1);
 const et = texto.split(' ').filter(palavra => palavra == 'et');
 
 console.log(`Quantidade de palavras ${palavras.length}.
-Quantidade de ocorrências de "et" ${et.length}.`)
+Quantidade de ocorrências de "et" ${et.length} no indice ${texto.indexOf('et')}.`)
+
+//BÔnus 2
 
 
